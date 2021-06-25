@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
     
@@ -18,8 +19,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.imagemBanner.layer.cornerRadius = 10
         self.imagemBanner.layer.masksToBounds = true
-        
-        
     }
     
     // MARK: - Actions
@@ -38,7 +37,12 @@ class ViewController: UIViewController {
         }
     }
     
-
+    @IBAction func textFieldCepAlterouValor(_ sender: UITextField) {
+        AF.request("https://viacep.com.br/ws/01001000/json/", method: .get).validate().responseJSON { (response) in
+            print(response)
+        }
+    }
+    
 
 }
 
