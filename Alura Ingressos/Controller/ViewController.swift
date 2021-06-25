@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import CPF_CNPJ_Validator
 
 class ViewController: UIViewController {
     
@@ -20,19 +19,16 @@ class ViewController: UIViewController {
         self.imagemBanner.layer.cornerRadius = 10
         self.imagemBanner.layer.masksToBounds = true
         
-        let cpf = "52526326362"
-        if BooleanValidator().validate(cpf: cpf) {
-            print("CPF VALIDO")
-        } else {
-            print("CPF INVALIDO")
-        }
+        
     }
     
     // MARK: - Actions
     @IBAction func botaoComprar(_ sender: UIButton) {
         let textFieldsEstaoPreenchidos = ValidaFormulario().verificaTextFieldsPreenchidos(textFields: textFields)
         
-        if textFieldsEstaoPreenchidos {
+        let textFieldsEstaoValidos = ValidaFormulario().verificaTextFieldsValidos(listaDeTextFields: textFields)
+        
+        if textFieldsEstaoPreenchidos && textFieldsEstaoValidos {
             let alerta = ValidaFormulario().exibeNotificacaoDePreenchimentoDosTextFields(titulo: "Parabéns", mensagem: "Compra realizada com sucesso")
             present(alerta, animated: true)
         } else {
