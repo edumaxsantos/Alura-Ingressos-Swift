@@ -16,6 +16,7 @@
 		FB5D05BD26857904000C7348 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5D05BA26857904000C7348 /* banner.png */; };
 		FB5D05BE26857904000C7348 /* logo_alura.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5D05BB26857904000C7348 /* logo_alura.png */; };
 		FB5D05BF26857904000C7348 /* bandeiras_cartoes.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5D05BC26857904000C7348 /* bandeiras_cartoes.png */; };
+		FB5D05C326857DA7000C7348 /* ValidaFormulario.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D05C226857DA7000C7348 /* ValidaFormulario.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FB5D05BA26857904000C7348 /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
 		FB5D05BB26857904000C7348 /* logo_alura.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_alura.png; sourceTree = "<group>"; };
 		FB5D05BC26857904000C7348 /* bandeiras_cartoes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bandeiras_cartoes.png; sourceTree = "<group>"; };
+		FB5D05C226857DA7000C7348 /* ValidaFormulario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidaFormulario.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +64,11 @@
 		FB5D05A4268571CB000C7348 /* Alura Ingressos */ = {
 			isa = PBXGroup;
 			children = (
-				FB5D05B9268578A2000C7348 /* Assets */,
 				FB5D05A5268571CB000C7348 /* AppDelegate.swift */,
+				FB5D05C026857D60000C7348 /* Model */,
+				FB5D05C126857D67000C7348 /* Controller */,
+				FB5D05B9268578A2000C7348 /* Assets */,
 				FB5D05A7268571CB000C7348 /* SceneDelegate.swift */,
-				FB5D05A9268571CB000C7348 /* ViewController.swift */,
 				FB5D05AB268571CB000C7348 /* Main.storyboard */,
 				FB5D05AE268571CD000C7348 /* Assets.xcassets */,
 				FB5D05B0268571CD000C7348 /* LaunchScreen.storyboard */,
@@ -82,6 +85,22 @@
 				FB5D05BB26857904000C7348 /* logo_alura.png */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		FB5D05C026857D60000C7348 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB5D05C226857DA7000C7348 /* ValidaFormulario.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB5D05C126857D67000C7348 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FB5D05A9268571CB000C7348 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +178,7 @@
 			files = (
 				FB5D05AA268571CB000C7348 /* ViewController.swift in Sources */,
 				FB5D05A6268571CB000C7348 /* AppDelegate.swift in Sources */,
+				FB5D05C326857DA7000C7348 /* ValidaFormulario.swift in Sources */,
 				FB5D05A8268571CB000C7348 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

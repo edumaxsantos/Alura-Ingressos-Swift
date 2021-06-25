@@ -277,6 +277,9 @@
                                                 <state key="normal" title="Comprar">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="botaoComprar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gb7-3M-3f1"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -310,6 +313,17 @@
                     <size key="freeformSize" width="414" height="1200"/>
                     <connections>
                         <outlet property="imagemBanner" destination="hl1-Mg-6Zs" id="DaM-zc-oHI"/>
+                        <outletCollection property="textFields" destination="B31-Gh-r1Z" collectionClass="NSMutableArray" id="TXh-G4-WKT"/>
+                        <outletCollection property="textFields" destination="BS2-Mq-des" collectionClass="NSMutableArray" id="2rF-Fa-tl5"/>
+                        <outletCollection property="textFields" destination="Omi-uD-cq6" collectionClass="NSMutableArray" id="Hzd-uE-xLu"/>
+                        <outletCollection property="textFields" destination="OcQ-ti-7bi" collectionClass="NSMutableArray" id="bp2-zY-ewM"/>
+                        <outletCollection property="textFields" destination="3uv-Qg-7X9" collectionClass="NSMutableArray" id="IR7-tD-AsU"/>
+                        <outletCollection property="textFields" destination="a2U-hV-nnU" collectionClass="NSMutableArray" id="yco-mQ-atp"/>
+                        <outletCollection property="textFields" destination="pYg-qB-jZf" collectionClass="NSMutableArray" id="hYZ-Qi-UJo"/>
+                        <outletCollection property="textFields" destination="yqt-M8-uBL" collectionClass="NSMutableArray" id="h7i-ie-eHl"/>
+                        <outletCollection property="textFields" destination="8Gh-2A-IMI" collectionClass="NSMutableArray" id="CK7-7W-NG9"/>
+                        <outletCollection property="textFields" destination="7tS-qk-MK2" collectionClass="NSMutableArray" id="oJK-5F-Pmk"/>
+                        <outletCollection property="textFields" destination="Pa5-Rm-oFO" collectionClass="NSMutableArray" id="bi0-Sy-AHj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
