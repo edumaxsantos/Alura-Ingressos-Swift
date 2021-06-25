@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,8 @@
 		FB5D05BE26857904000C7348 /* logo_alura.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5D05BB26857904000C7348 /* logo_alura.png */; };
 		FB5D05BF26857904000C7348 /* bandeiras_cartoes.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5D05BC26857904000C7348 /* bandeiras_cartoes.png */; };
 		FB5D05C326857DA7000C7348 /* ValidaFormulario.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D05C226857DA7000C7348 /* ValidaFormulario.swift */; };
+		FB5D05C526868D85000C7348 /* Localizacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D05C426868D85000C7348 /* Localizacao.swift */; };
+		FB5D05C726868DBA000C7348 /* LocalizacaoConsultaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D05C626868DBA000C7348 /* LocalizacaoConsultaAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		FB5D05BB26857904000C7348 /* logo_alura.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_alura.png; sourceTree = "<group>"; };
 		FB5D05BC26857904000C7348 /* bandeiras_cartoes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bandeiras_cartoes.png; sourceTree = "<group>"; };
 		FB5D05C226857DA7000C7348 /* ValidaFormulario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidaFormulario.swift; sourceTree = "<group>"; };
+		FB5D05C426868D85000C7348 /* Localizacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizacao.swift; sourceTree = "<group>"; };
+		FB5D05C626868DBA000C7348 /* LocalizacaoConsultaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizacaoConsultaAPI.swift; sourceTree = "<group>"; };
 		FC61A1E27FC1DE8027E5C6A2 /* Pods-Alura Ingressos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alura Ingressos.debug.xcconfig"; path = "Target Support Files/Pods-Alura Ingressos/Pods-Alura Ingressos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,7 +60,6 @@
 				FC61A1E27FC1DE8027E5C6A2 /* Pods-Alura Ingressos.debug.xcconfig */,
 				8F84E52A6634A98BFA4793F0 /* Pods-Alura Ingressos.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -116,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				FB5D05C226857DA7000C7348 /* ValidaFormulario.swift */,
+				FB5D05C426868D85000C7348 /* Localizacao.swift */,
+				FB5D05C626868DBA000C7348 /* LocalizacaoConsultaAPI.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -249,6 +254,8 @@
 				FB5D05A6268571CB000C7348 /* AppDelegate.swift in Sources */,
 				FB5D05C326857DA7000C7348 /* ValidaFormulario.swift in Sources */,
 				FB5D05A8268571CB000C7348 /* SceneDelegate.swift in Sources */,
+				FB5D05C726868DBA000C7348 /* LocalizacaoConsultaAPI.swift in Sources */,
+				FB5D05C526868D85000C7348 /* Localizacao.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -141,7 +141,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
-                                                    <action selector="textFieldCepAlterouValor:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="B5L-Bc-QPk"/>
+                                                    <action selector="textFieldCepAlterouValor:" destination="BYZ-38-t0r" eventType="editingChanged" id="Win-CZ-2Oe"/>
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Endereço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEx-mu-pg9">

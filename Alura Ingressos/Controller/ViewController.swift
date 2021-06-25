@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Alamofire
+
 
 class ViewController: UIViewController {
     
@@ -19,6 +19,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.imagemBanner.layer.cornerRadius = 10
         self.imagemBanner.layer.masksToBounds = true
+    }
+    
+    func buscaTextField(tipoDeTextField: TiposDeTextField, completion: (_ textFieldSolicitado: UITextField) -> Void) {
+        for textField in textFields {
+            if let textFieldAtual = TiposDeTextField(rawValue: textField.tag) {
+                if textFieldAtual == tipoDeTextField {
+                    completion(textField)
+                }
+            }
+        }
     }
     
     // MARK: - Actions
@@ -38,9 +48,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func textFieldCepAlterouValor(_ sender: UITextField) {
-        AF.request("https://viacep.com.br/ws/01001000/json/", method: .get).validate().responseJSON { (response) in
-            print(response)
-        }
+        guard let cep = sender.text else { return }
+        LocalizacaoConsultaAPI().consultaViaCepAPI(cep: cep, sucesso: { (localizacao) in
+            self.buscaTextField(tipoDeTextField: .endereco, completion: { (textFieldEndereco) in
+                textFieldEndereco.text = localizacao.logradouro
+            })
+            self.buscaTextField(tipoDeTextField: .bairro, completion: { (textFieldBairro) in
+                textFieldBairro.text = localizacao.bairro
+            })
+        }, falha: { (error) in
+            print(error.localizedDescription)
+        })
     }
     
 
