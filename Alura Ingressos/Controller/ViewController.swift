@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CPF_CNPJ_Validator
 
 class ViewController: UIViewController {
     
@@ -18,6 +19,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.imagemBanner.layer.cornerRadius = 10
         self.imagemBanner.layer.masksToBounds = true
+        
+        let cpf = "52526326362"
+        if BooleanValidator().validate(cpf: cpf) {
+            print("CPF VALIDO")
+        } else {
+            print("CPF INVALIDO")
+        }
     }
     
     // MARK: - Actions

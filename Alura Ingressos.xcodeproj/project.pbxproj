@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE18426959DF7F043CEFBC88 /* Pods_Alura_Ingressos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52B3741DE69CCDEF29E7304 /* Pods_Alura_Ingressos.framework */; };
 		FB5D05A6268571CB000C7348 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D05A5268571CB000C7348 /* AppDelegate.swift */; };
 		FB5D05A8268571CB000C7348 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D05A7268571CB000C7348 /* SceneDelegate.swift */; };
 		FB5D05AA268571CB000C7348 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D05A9268571CB000C7348 /* ViewController.swift */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F84E52A6634A98BFA4793F0 /* Pods-Alura Ingressos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alura Ingressos.release.xcconfig"; path = "Target Support Files/Pods-Alura Ingressos/Pods-Alura Ingressos.release.xcconfig"; sourceTree = "<group>"; };
+		B52B3741DE69CCDEF29E7304 /* Pods_Alura_Ingressos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alura_Ingressos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5D05A2268571CB000C7348 /* Alura Ingressos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alura Ingressos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5D05A5268571CB000C7348 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB5D05A7268571CB000C7348 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		FB5D05BB26857904000C7348 /* logo_alura.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_alura.png; sourceTree = "<group>"; };
 		FB5D05BC26857904000C7348 /* bandeiras_cartoes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bandeiras_cartoes.png; sourceTree = "<group>"; };
 		FB5D05C226857DA7000C7348 /* ValidaFormulario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidaFormulario.swift; sourceTree = "<group>"; };
+		FC61A1E27FC1DE8027E5C6A2 /* Pods-Alura Ingressos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alura Ingressos.debug.xcconfig"; path = "Target Support Files/Pods-Alura Ingressos/Pods-Alura Ingressos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE18426959DF7F043CEFBC88 /* Pods_Alura_Ingressos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36A1DAE2AA86575FA418B31E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC61A1E27FC1DE8027E5C6A2 /* Pods-Alura Ingressos.debug.xcconfig */,
+				8F84E52A6634A98BFA4793F0 /* Pods-Alura Ingressos.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DE00ACFFF4152953FF3BA4D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B52B3741DE69CCDEF29E7304 /* Pods_Alura_Ingressos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FB5D0599268571CB000C7348 = {
 			isa = PBXGroup;
 			children = (
 				FB5D05A4268571CB000C7348 /* Alura Ingressos */,
 				FB5D05A3268571CB000C7348 /* Products */,
+				36A1DAE2AA86575FA418B31E /* Pods */,
+				DE00ACFFF4152953FF3BA4D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB5D05B6268571CD000C7348 /* Build configuration list for PBXNativeTarget "Alura Ingressos" */;
 			buildPhases = (
+				C9D2895AFFE411D47AFB1A3A /* [CP] Check Pods Manifest.lock */,
 				FB5D059E268571CB000C7348 /* Sources */,
 				FB5D059F268571CB000C7348 /* Frameworks */,
 				FB5D05A0268571CB000C7348 /* Resources */,
+				E6BA7BFFCC87168FFEDA7A1D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,6 +197,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C9D2895AFFE411D47AFB1A3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alura Ingressos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6BA7BFFCC87168FFEDA7A1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alura Ingressos/Pods-Alura Ingressos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alura Ingressos/Pods-Alura Ingressos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Alura Ingressos/Pods-Alura Ingressos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FB5D059E268571CB000C7348 /* Sources */ = {
@@ -323,6 +392,7 @@
 		};
 		FB5D05B7268571CD000C7348 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC61A1E27FC1DE8027E5C6A2 /* Pods-Alura Ingressos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -342,6 +412,7 @@
 		};
 		FB5D05B8268571CD000C7348 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F84E52A6634A98BFA4793F0 /* Pods-Alura Ingressos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
