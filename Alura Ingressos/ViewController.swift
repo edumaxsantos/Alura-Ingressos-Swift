@@ -8,10 +8,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    // MARK: - Outlets
+    @IBOutlet weak var imagemBanner: UIImageView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.imagemBanner.layer.cornerRadius = 10
+        self.imagemBanner.layer.masksToBounds = true
     }
 
 
