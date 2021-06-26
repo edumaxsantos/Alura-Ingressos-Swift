@@ -8,7 +8,7 @@
 import UIKit
 
 
-class ViewController: UIViewController, PickerViewMesSelecionado, PickerViewAnoSelecionado {
+class ViewController: UIViewController, PickerViewMesSelecionado, PickerViewAnoSelecionado, PickerViewNumeroDeParcela {
     
     // MARK: - Outlets
     @IBOutlet weak var imagemBanner: UIImageView!
@@ -17,6 +17,7 @@ class ViewController: UIViewController, PickerViewMesSelecionado, PickerViewAnoS
     
     var pickerViewMes = PickerViewMes()
     var pickerViewAno = PickerViewAno()
+    var pickerViewParcela = PickerViewParcela()
     
 
     override func viewDidLoad() {
@@ -25,6 +26,7 @@ class ViewController: UIViewController, PickerViewMesSelecionado, PickerViewAnoS
         self.imagemBanner.layer.masksToBounds = true
         pickerViewMes.delegate = self
         pickerViewAno.delegate = self
+        pickerViewParcela.delegate = self
         NotificationCenter.default.addObserver(self, selector: #selector(aumentarScrollView(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
     }
     
@@ -52,6 +54,12 @@ class ViewController: UIViewController, PickerViewMesSelecionado, PickerViewAnoS
     func anoSelecionado(ano: String) {
         self.buscaTextField(tipoDeTextField: .anoDeVencimento) { (textFieldAno) in
             textFieldAno.text = ano
+        }
+    }
+    
+    func pickerViewParcelaSelecionada(parcela: String) {
+        self.buscaTextField(tipoDeTextField: .numeroDeParcelas) { (textFieldNumeroDeParcela) in
+            textFieldNumeroDeParcela.text = parcela
         }
     }
     
@@ -115,6 +123,12 @@ class ViewController: UIViewController, PickerViewMesSelecionado, PickerViewAnoS
 //                textFieldCodigoSeguranca.text = texto
 //            }
 //        }
+    }
+    @IBAction func textFieldParcelas(_ sender: UITextField) {
+        let pickerView = UIPickerView()
+        pickerView.delegate = pickerViewParcela
+        pickerView.dataSource = pickerViewParcela
+        sender.inputView = pickerView
     }
     
 
