@@ -96,6 +96,26 @@ class ViewController: UIViewController, PickerViewMesSelecionado, PickerViewAnoS
         pickerView.dataSource = pickerViewAno
         sender.inputView = pickerView
     }
+    @IBAction func textFieldCodigoDeSeguranca(_ sender: UITextField) {
+        guard let texto = sender.text else { return }
+        
+        if texto.count < 3 {
+            self.buscaTextField(tipoDeTextField: .codigoDeSeguranca) { (textFieldCodigoSeguranca) in
+                textFieldCodigoSeguranca.text = texto
+            }
+        }
+        
+//        if texto.count > 3 {
+//            let codigo = texto.suffix(3)
+//            self.buscaTextField(tipoDeTextField: .codigoDeSeguranca) { (textFieldCodigoSeguranca) in
+//                textFieldCodigoSeguranca.text = String(codigo)
+//            }
+//        } else {
+//            self.buscaTextField(tipoDeTextField: .codigoDeSeguranca) { (textFieldCodigoSeguranca) in
+//                textFieldCodigoSeguranca.text = texto
+//            }
+//        }
+    }
     
 
 }
