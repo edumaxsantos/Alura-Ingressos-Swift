@@ -209,11 +209,17 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="95.666666666666671" height="34"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
+                                                                        <connections>
+                                                                            <action selector="textFieldMesEntrouEmFoco:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="8Mz-a9-rat"/>
+                                                                        </connections>
                                                                     </textField>
                                                                     <textField opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="AA" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Gh-2A-IMI">
                                                                         <rect key="frame" x="95.666666666666686" y="0.0" width="95.333333333333314" height="34"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
+                                                                        <connections>
+                                                                            <action selector="textFieldAnoEntrouEmFoco:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="UOf-Uc-cbZ"/>
+                                                                        </connections>
                                                                     </textField>
                                                                 </subviews>
                                                             </stackView>
@@ -316,6 +322,7 @@
                     <size key="freeformSize" width="414" height="1200"/>
                     <connections>
                         <outlet property="imagemBanner" destination="hl1-Mg-6Zs" id="DaM-zc-oHI"/>
+                        <outlet property="scrollViewPrincipal" destination="IsX-1m-BpH" id="1th-50-3jP"/>
                         <outletCollection property="textFields" destination="B31-Gh-r1Z" collectionClass="NSMutableArray" id="TXh-G4-WKT"/>
                         <outletCollection property="textFields" destination="BS2-Mq-des" collectionClass="NSMutableArray" id="2rF-Fa-tl5"/>
                         <outletCollection property="textFields" destination="Omi-uD-cq6" collectionClass="NSMutableArray" id="Hzd-uE-xLu"/>
