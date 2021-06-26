@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Money
 
 
 class ViewController: UIViewController, PickerViewMesSelecionado, PickerViewAnoSelecionado, PickerViewNumeroDeParcela {
@@ -14,10 +15,13 @@ class ViewController: UIViewController, PickerViewMesSelecionado, PickerViewAnoS
     @IBOutlet weak var imagemBanner: UIImageView!
     @IBOutlet var textFields: [UITextField]!
     @IBOutlet weak var scrollViewPrincipal: UIScrollView!
+    @IBOutlet weak var labelValorDasParcelas: UILabel!
     
     var pickerViewMes = PickerViewMes()
     var pickerViewAno = PickerViewAno()
     var pickerViewParcela = PickerViewParcela()
+    
+    var valorDoIngresso: Money<BRL> = 199
     
 
     override func viewDidLoad() {
@@ -59,7 +63,14 @@ class ViewController: UIViewController, PickerViewMesSelecionado, PickerViewAnoS
     
     func pickerViewParcelaSelecionada(parcela: String) {
         self.buscaTextField(tipoDeTextField: .numeroDeParcelas) { (textFieldNumeroDeParcela) in
-            textFieldNumeroDeParcela.text = parcela
+            textFieldNumeroDeParcela.text = "\(parcela)x"
+            let calculoDaParcela = valorDoIngresso * (1 / Double(parcela)!)
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .currency
+            formatter.locale = Locale(identifier: "pt-BR")
+            formatter.currencyCode = valorDoIngresso.currency.code
+            let valorFormatado = formatter.string(for: calculoDaParcela.amount)
+            self.labelValorDasParcelas.text = String(format: "%@x %@ (ou R$199,00 à vista)", parcela, valorFormatado!)
         }
     }
     

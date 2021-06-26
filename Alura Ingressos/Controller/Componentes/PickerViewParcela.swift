@@ -24,12 +24,12 @@ class PickerViewParcela: NSObject, UIPickerViewDataSource, UIPickerViewDelegate 
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return "\(row + 1)x"
+        return "\(row + 1)"
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if delegate != nil {
-            delegate?.pickerViewParcelaSelecionada(parcela: "\(row + 1)x")
+            delegate?.pickerViewParcelaSelecionada(parcela: "\(row + 1)")
         }
     }
 }

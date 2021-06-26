@@ -328,6 +328,7 @@
                     <size key="freeformSize" width="414" height="1200"/>
                     <connections>
                         <outlet property="imagemBanner" destination="hl1-Mg-6Zs" id="DaM-zc-oHI"/>
+                        <outlet property="labelValorDasParcelas" destination="Y5y-AC-8Df" id="ixt-vH-xq1"/>
                         <outlet property="scrollViewPrincipal" destination="IsX-1m-BpH" id="1th-50-3jP"/>
                         <outletCollection property="textFields" destination="B31-Gh-r1Z" collectionClass="NSMutableArray" id="TXh-G4-WKT"/>
                         <outletCollection property="textFields" destination="BS2-Mq-des" collectionClass="NSMutableArray" id="2rF-Fa-tl5"/>

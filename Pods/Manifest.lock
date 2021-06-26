@@ -2,23 +2,27 @@ PODS:
   - Alamofire (5.4.3)
   - CPF-CNPJ-Validator (1.0.2)
   - CreditCardValidator (0.5.1)
+  - Money-FlightSchool (1.3.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.4)
   - CPF-CNPJ-Validator
   - CreditCardValidator
+  - Money-FlightSchool (~> 1.3.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - CPF-CNPJ-Validator
     - CreditCardValidator
+    - Money-FlightSchool
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   CPF-CNPJ-Validator: 0b08069595da2c4b20e964b743bfc0a7334d5347
   CreditCardValidator: b312e6d6df827d5828eae3905da6812262715b32
+  Money-FlightSchool: 3a62cca98d1d090f5d9820902a49d0168dc40b5c
 
-PODFILE CHECKSUM: 38b11feddf2ec4b868316e9b19208e99dc310b30
+PODFILE CHECKSUM: 50ae7255e5febe7fde46f05a806a7365db31a9df
 
 COCOAPODS: 1.10.1
